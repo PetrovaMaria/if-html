@@ -1,4 +1,8 @@
-h1 {
+* {
+    margin: 0 auto;
+}
+
+.title {
     text-align: center;
     margin-top: 120px;
     margin-bottom: 20px;
@@ -12,15 +16,16 @@ hr {
     border: 0;
 }
 
-.container {
-    width: 296px;
+.row {
+    padding: 65px 16px;
+    max-width: 1440px;
+    margin: 0 auto;
     text-align: center;
-    float: left;
 }
 
-.first-element {
-    margin-left: 150px;
-    margin-bottom: 120px;
+.main-block {
+    display: flex;
+    gap: 16px;
 }
 
 img {

@@ -11,14 +11,14 @@
 }
 
 .title {
-  width: 306px;
-  margin-left: 463px;
+  text-align: center;
+  margin-left: -80px;
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 40px;
 }
 
-hr {
+.line {
   height: 4px;
   width: 100px;
   background-color: #f5bd41;
@@ -43,7 +43,7 @@ img {
   margin-bottom: 45px;
 }
 
-footer {
+.footer {
   background-color: #10367c;
   color: #fff;
 }
@@ -52,11 +52,20 @@ footer {
   display: flex;
   font-size: 20px;
   margin: 0;
+  max-width: 1064px;
+  justify-content: space-between;
 }
 
-footer p {
-  font-weight: 400;
+.footer p {
+   font-weight: 400;
+   margin: 24px 0;
+ }
+
+.columns a {
+  display: block;
   margin: 24px 0;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 p.footer-title {
@@ -64,17 +73,12 @@ p.footer-title {
   margin-top: 0;
 }
 
-.first-column {
-  margin-right: 223px;
-}
-
-.second-column {
-  margin-right: 285px;
+.columns{
   margin-bottom: 40px;
 }
 
 .small-text {
   font-size: 14px;
-  margin: 0 0 120px;
+  margin: 0;
 }
 

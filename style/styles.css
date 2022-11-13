@@ -12,7 +12,6 @@
 
 .title {
   text-align: center;
-  margin-left: -80px;
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 40px;
@@ -23,8 +22,7 @@
   width: 100px;
   background-color: #f5bd41;
   border: 0;
-  margin-bottom: 80px;
-  margin-left: 565px;
+  margin: 0 auto 80px;
 }
 
 .row {
@@ -39,7 +37,7 @@
   gap: 16px;
 }
 
-img {
+.row-image {
   margin-bottom: 45px;
 }
 
@@ -56,24 +54,31 @@ img {
   justify-content: space-between;
 }
 
-.footer p {
-   font-weight: 400;
-   margin: 24px 0;
- }
-
-.columns a {
-  display: block;
+.footer .footer-title {
+  font-weight: 400;
   margin: 24px 0;
+}
+
+.columns .link {
   text-decoration: none;
   color: #ffffff;
 }
 
-p.footer-title {
+.links {
+  padding: 0;
+}
+
+.links .element {
+  list-style-type: none;
+  margin: 24px 0;
+}
+
+.footer-title {
   font-weight: 500;
   margin-top: 0;
 }
 
-.columns{
+.columns {
   margin-bottom: 40px;
 }
 
@@ -81,4 +86,3 @@ p.footer-title {
   font-size: 14px;
   margin: 0;
 }
-

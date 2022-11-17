@@ -10,53 +10,117 @@
     <link rel="stylesheet" href="style/styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="top-section">
+      <header class="header">
+        <div class="container">
+          <div class="header-block">
+            <div class="left-element">
+              <img src="./images/logo.png" alt="TripHouse" />
+            </div>
+            <div class="right-element">
+              <div class="icons header-text">
+                <div>
+                  <p class="text-line">Stays</p>
+                  <hr class="line underline" />
+                </div>
+                <p>Attractions</p>
+              </div>
+              <div class="icons">
+                <img
+                  class="icons-image"
+                  src="./images/Night.png"
+                  alt="logo night"
+                />
+                <img
+                  class="icons-image"
+                  src="./images/Account.png"
+                  alt="account"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="page">
+        <div class="container">
+          <div class="main-title">
+            <h1>Discover stays <br />to live, work or just relax</h1>
+          </div>
+          <div class="title-input">
+          <p>Your destination or hotel name</p>
+          <p >Check-in — Check-out</p>
+          </div>
+          <form class="destination">
+            <input value="New York" type="text" class="place input" />
+            <input value="Tue 15 Sept — Sat 19 Sept" type="text" class="date input" />
+            <input value="2 Adults — 0 Children — 1 Room" type="text" class="info input" />
+            <input class="search" type="button" value="Search" />
+          </form>
+          <div class="apps">
+            <img class="google-play" src="./images/google_play.png" alt="logo-google-play">
+            <img src="./images/App_Store.png" alt="logo-App-Store">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container _container-properties">
       <h2 class="title">What do we offer</h2>
-      <hr />
+      <hr class="line offer-line" />
       <div class="main-block">
         <div class="row first-element">
-          <!--Размер объектов SVG намного меньше размера растровых изображений.
-        В отличие от растровых форматов мы можем взаимодействовать с изображениями в формате SVG — при помощи CSS.-->
-          <img src="images/Headset.svg" alt="head-set" />
+          <!--Size of SVG image less than PNG image.-->
+          <img class="row-image" src="images/Headset.svg" alt="head-set" />
           <p>Support 24/7</p>
         </div>
         <div class="row">
-          <img src="images/Forum.svg" alt="communication" />
+          <img class="row-image" src="images/Forum.svg" alt="communication" />
           <p>Communicate directly</p>
         </div>
         <div class="row">
-          <img src="images/Devices.svg" alt="devices" />
+          <img class="row-image" src="images/Devices.svg" alt="devices" />
           <p>Book online</p>
         </div>
         <div class="row">
-          <img src="images/Outlined.svg" alt="like" />
+          <img class="row-image" src="images/Outlined.svg" alt="like" />
           <p>Real guest reviews</p>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
+    <footer class="footer">
+      <div class="container _container-properties">
         <div class="main-row">
-          <div class="first-column">
+          <div class="columns">
             <p class="footer-title">About</p>
-            <p>How Triphouse works</p>
-            <p>Careers</p>
-            <p>Privacy</p>
-            <p>Terms</p>
+            <ul class="links">
+              <li class="element">
+                <a class="link" href="#">How Triphouse works</a>
+              </li>
+              <li class="element"><a class="link" href="#">Careers</a></li>
+              <li class="element"><a class="link" href="#">Privacy</a></li>
+              <li class="element"><a class="link" href="#">Terms</a></li>
+            </ul>
           </div>
-          <div class="second-column">
+          <div class="columns">
             <p class="footer-title">Property types</p>
-            <p>Guest houses</p>
-            <p>Hotels</p>
-            <p>Apartments</p>
-            <p>Villas</p>
-            <p>Holiday homes</p>
-            <p>Hostels</p>
+            <ul class="links">
+              <li class="element"><a class="link" href="#">Guest houses</a></li>
+              <li class="element"><a class="link" href="#">Hotels</a></li>
+              <li class="element"><a class="link" href="#">Apartments</a></li>
+              <li class="element"><a class="link" href="#">Villas</a></li>
+              <li class="element">
+                <a class="link" href="#">Holiday homes</a>
+              </li>
+              <li class="element"><a class="link" href="#">Hostels</a></li>
+            </ul>
           </div>
-          <div class="third-column">
+          <div class="columns">
             <p class="footer-title">Support</p>
-            <p>Contact Customer Service</p>
-            <p>FAQ</p>
+            <ul class="links">
+              <li class="element">
+                <a class="link" href="#">Contact Customer Service</a>
+              </li>
+              <li class="element"><a class="link" href="#">FAQ</a></li>
+            </ul>
           </div>
         </div>
         <p class="small-text">&copy;2022Triphouse, Inc. All rights reserved</p>

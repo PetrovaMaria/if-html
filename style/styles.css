@@ -18,11 +18,16 @@
   height: 45px;
 }
 
+.icons-image{
+  display:flex;
+  gap: 24px;
+}
+
 .icons-image__night {
   background-image: url("../images/sprite.svg");
   width: 30px;
-  height: 30px;
-  background-position: -205px -10px;
+  height: 40px;
+  background-position: -205px -5px;
 }
 
 .icons-image__account {
@@ -88,7 +93,7 @@
   size: 24px;
 }
 
-.container__line {
+.right-element__line {
   height: 4px;
   background-color: #f5bd41;
   border: 0;

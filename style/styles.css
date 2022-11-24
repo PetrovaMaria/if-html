@@ -5,102 +5,7 @@
 }
 
 .container {
-  margin: 0 auto;
   max-width: 1440px;
-  padding-left: 104px;
-  padding-right: 104px;
-  padding-bottom: 120px;
-}
-
-.left-element {
-  background-image: url("../images/sprite.svg");
-  width: 205px;
-  height: 45px;
-}
-
-.icons-image{
-  display:flex;
-  gap: 24px;
-}
-
-.icons-image__night {
-  background-image: url("../images/sprite.svg");
-  width: 30px;
-  height: 40px;
-  background-position: -205px -5px;
-}
-
-.icons-image__account {
-  background-image: url("../images/sprite.svg");
-  width: 40px;
-  height: 40px;
-  background-position: -237px -5px;
-}
-
-.google-play {
-  background-image: url("../images/sprite.svg");
-  width: 119px;
-  height: 47px;
-  background-position: -277px;
-  margin-right: 16px;
-}
-
-.App_Store {
-  background-image: url("../images/sprite.svg");
-  width: 120px;
-  height: 47px;
-  background-position: -412px;
-}
-
-.container__properties {
-  padding-top: 120px;
-  padding-bottom: 115px;
-}
-
-.right-element__text-line {
-  padding-bottom: 3px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.right-element__icons--header-text {
-  font-size: 24px;
-}
-
-.top-section {
-  min-height: 100vh;
-  background: url("../images/background_image.png") no-repeat center;
-  background-size: cover;
-}
-
-.header-block {
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.right-element {
-  display: flex;
-  gap: 48px;
-}
-
-.right-element__icons {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  height: 100%;
-  size: 24px;
-}
-
-.right-element__line {
-  height: 4px;
-  background-color: #f5bd41;
-  border: 0;
-}
-
-.right-element__line--underline {
-  width: 50px;
   margin: 0 auto;
 }
 
@@ -183,12 +88,13 @@
 .title {
   text-align: center;
   margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 40px;
 }
 
 .container__line--offer-line {
   width: 100px;
+  margin: 0 auto 80px;
+  background-color: #f5bd41;
+  border: 0;
   margin: 0 auto 80px;
 }
 

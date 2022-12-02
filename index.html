@@ -1,167 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="lesson 3" />
-  <meta name="keywords" content="meta, list, form, image, input, tables" />
-  <meta name="author" content="Masha" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Title</title>
-  <link rel="stylesheet" href="style/styles.css" />
-</head>
-<body>
-<div class="top-section">
-  <header>
-    <div class="container">
-      <div class="header-block">
-        <div class="left-element"></div>
-        <div class="right-element">
-          <div
-                  class="right-element__icons right-element__icons--header-text"
-          >
-            <div>
-              <a href="#" class="right-element__text-line">Stays</a>
-              <hr
-                      class="right-element__line right-element__line--underline"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="lesson 3" />
+    <meta name="keywords" content="meta, list, form, image, input, tables" />
+    <meta name="author" content="Masha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="stylesheet" href="style/styles.css" />
+  </head>
+  <body>
+    <div class="top-section">
+      <header>
+        <div class="container">
+          <div class="header-block">
+            <svg class="left-element" xmlns="http://www.w3.org/2000/svg">
+                <use href="./images/sprite-svg.svg/#left" />
+            </svg>
+            <div class="right-element">
+              <div
+                class="right-element__icons right-element__icons--header-text"
+              >
+                <div>
+                  <a href="#" class="right-element__text-line">Stays</a>
+                  <hr
+                    class="right-element__line right-element__line--underline"
+                  />
+                </div>
+                <p>Attractions</p>
+              </div>
+              <div class="icons-image">
+                <svg
+                  class="icons-image__night"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 30 30"
+                >
+                  <use href="./images/sprite-svg.svg/#night" />
+                </svg>
+                <svg class="icons-image__account" xmlns="http://www.w3.org/2000/svg">
+                  <use href="./images/sprite-svg.svg/#account" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div>
+        <div class="container">
+          <div class="main-title">
+            <h1>Discover stays <br />to live, work or just relax</h1>
+          </div>
+          <form class="destination">
+            <div class="place-block">
+              <label for="place" class="place-block__label">
+                Your destination or hotel name
+              </label>
+              <input
+                id="place"
+                placeholder="New York"
+                type="text"
+                class="place-block__input--place place-block__input"
               />
             </div>
-            <p>Attractions</p>
+            <div class="date-block">
+              <label for="date" class="place-block__label label-date">
+                Check-in — Check-out
+              </label>
+              <input
+                id="date"
+                placeholder="Tue 15 Sept — Sat 19 Sept"
+                type="text"
+                class="place-block__input--date place-block__input"
+              />
+            </div>
+            <div class="info-block">
+              <label for="info" class="place-block__label label-info"> </label>
+              <input
+                id="info"
+                placeholder="2 Adults — 0 Children — 1 Room"
+                type="text"
+                class="place-block__input--info place-block__input"
+              />
+            </div>
+            <button class="place-block__search">Search</button>
+          </form>
+          <div class="apps">
+            <svg xmlns="http://www.w3.org/2000/svg" class="google-play">
+             <use href="./images/sprite-svg.svg/#google-play" />
+            </svg>
+            <svg class="App_Store" xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/sprite-svg.svg/#app-store" />
+            </svg>
           </div>
-          <div class="icons-image">
-            <div class="icons-image__night"></div>
-            <div class="icons-image__account"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container container__properties">
+      <h2 class="title">What do we offer</h2>
+      <hr class="container__line container__line--offer-line" />
+      <div class="main-block">
+        <div class="main-block__row">
+          <svg class="row-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <use href="./images/sprite-svg.svg/#headset" />
+          </svg>
+          <p>Support 24/7</p>
+        </div>
+        <div class="main-block__row">
+          <svg class="row-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <use href="./images/sprite-svg.svg/#forum" />
+          </svg>
+          <p>Communicate directly</p>
+        </div>
+        <div class="main-block__row">
+          <svg class="row-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <use href="./images/sprite-svg.svg/#devices" />
+          </svg>
+          <p>Book online</p>
+        </div>
+        <div class="main-block__row">
+          <svg class="row-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <use href="./images/sprite-svg.svg/#outlined" />
+          </svg>
+          <p>Real guest reviews</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container container__properties-footer">
+        <div class="main-row">
+          <div class="columns">
+            <p class="columns__footer-title">About</p>
+            <ul class="links">
+              <li class="links__element">
+                <a class="links__element--link" href="#">How Triphouse works</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Careers</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Privacy</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Terms</a>
+              </li>
+            </ul>
+          </div>
+          <div class="columns">
+            <p class="columns__footer-title">Property types</p>
+            <ul class="links">
+              <li class="links__element">
+                <a class="links__element--link" href="#">Guest houses</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Hotels</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Apartments</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Villas</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Holiday homes</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Hostels</a>
+              </li>
+            </ul>
+          </div>
+          <div class="columns">
+            <p class="columns__footer-title">Support</p>
+            <ul class="links">
+              <li class="links__element">
+                <a class="links__element--link" href="#"
+                  >Contact Customer Service</a
+                >
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">FAQ</a>
+              </li>
+            </ul>
           </div>
         </div>
+        <p class="small-text">&copy;2022Triphouse, Inc. All rights reserved</p>
       </div>
-    </div>
-  </header>
-  <div>
-    <div class="container">
-      <div class="main-title">
-        <h1>Discover stays <br />to live, work or just relax</h1>
-      </div>
-      <form class="destination">
-        <div class="place-block">
-          <label for="place" class="place-block__label">
-            Your destination or hotel name
-          </label>
-          <input
-                  id="place"
-                  placeholder="New York"
-                  type="text"
-                  class="place-block__input--place place-block__input"
-          />
-        </div>
-        <div class="date-block">
-          <label for="date" class="place-block__label label-date">
-            Check-in — Check-out
-          </label>
-          <input
-                  id="date"
-                  placeholder="Tue 15 Sept — Sat 19 Sept"
-                  type="text"
-                  class="place-block__input--date place-block__input"
-          />
-        </div>
-        <div class="info-block">
-          <label for="info" class="place-block__label label-info"> </label>
-          <input
-                  id="info"
-                  placeholder="2 Adults — 0 Children — 1 Room"
-                  type="text"
-                  class="place-block__input--info place-block__input"
-          />
-        </div>
-        <button class="place-block__search">Search</button>
-      </form>
-      <div class="apps">
-        <div class="google-play"></div>
-        <div class="App_Store"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container container__properties">
-  <h2 class="title">What do we offer</h2>
-  <hr class="container__line container__line--offer-line" />
-  <div class="main-block">
-    <div class="main-block__row">
-      <img class="row-image" src="images/Headset.svg" alt="head-set" />
-      <p>Support 24/7</p>
-    </div>
-    <div class="main-block__row">
-      <img class="row-image" src="images/Forum.svg" alt="communication" />
-      <p>Communicate directly</p>
-    </div>
-    <div class="main-block__row">
-      <img class="row-image" src="images/Devices.svg" alt="devices" />
-      <p>Book online</p>
-    </div>
-    <div class="main-block__row">
-      <img class="row-image" src="images/Outlined.svg" alt="like" />
-      <p>Real guest reviews</p>
-    </div>
-  </div>
-</div>
-<footer class="footer">
-  <div class="container container__properties-footer">
-    <div class="main-row">
-      <div class="columns">
-        <p class="columns__footer-title">About</p>
-        <ul class="links">
-          <li class="links__element">
-            <a class="links__element--link" href="#">How Triphouse works</a>
-          </li>
-          <li class="links__element">
-            <a class="links__element--link" href="#">Careers</a>
-          </li>
-          <li class="links__element">
-            <a class="links__element--link" href="#">Privacy</a>
-          </li>
-          <li class="links__element">
-            <a class="links__element--link" href="#">Terms</a>
-          </li>
-        </ul>
-      </div>
-      <div class="columns">
-        <p class="columns__footer-title">Property types</p>
-        <ul class="links">
-          <li class="links__element">
-            <a class="links__element--link" href="#">Guest houses</a>
-          </li>
-          <li class="links__element">
-            <a class="links__element--link" href="#">Hotels</a>
-          </li>
-          <li class="links__element">
-            <a class="links__element--link" href="#">Apartments</a>
-          </li>
-          <li class="links__element">
-            <a class="links__element--link" href="#">Villas</a>
-          </li>
-          <li class="links__element">
-            <a class="links__element--link" href="#">Holiday homes</a>
-          </li>
-          <li class="links__element">
-            <a class="links__element--link" href="#">Hostels</a>
-          </li>
-        </ul>
-      </div>
-      <div class="columns">
-        <p class="columns__footer-title">Support</p>
-        <ul class="links">
-          <li class="links__element">
-            <a class="links__element--link" href="#"
-            >Contact Customer Service</a
-            >
-          </li>
-          <li class="links__element">
-            <a class="links__element--link" href="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <p class="small-text">&copy;2022Triphouse, Inc. All rights reserved</p>
-  </div>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>

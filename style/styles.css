@@ -386,6 +386,8 @@
     margin: 0 auto;
     fill: #ffffff;
     padding-bottom: 40px;
+    width: 98px;
+    height: 19px;
   }
 
   .container__properties-footer {

@@ -4,6 +4,54 @@
   font-weight: 400;
 }
 
+.col-lg-1 {
+width: 8.33%;
+}
+
+.col-lg-2 {
+  width: 16.66%;
+}
+
+.col-lg-3 {
+  width: 25%;
+}
+
+.col-lg-4 {
+  width: 33.33%;
+}
+
+.col-lg-5 {
+  width: 41.66%;
+}
+
+.col-lg-6 {
+  width: 50%;
+}
+
+.col-lg-7 {
+  width: 58.33%;
+}
+
+.col-lg-8 {
+  width: 66.66%;
+}
+
+.col-lg-9 {
+  width: 75%;
+}
+
+.col-lg-10 {
+  width: 83.33%;
+}
+
+.col-lg-11 {
+  width: 91.66%;
+}
+
+.col-lg-12 {
+  width: 100%;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1408px;
@@ -13,6 +61,7 @@
 [class*="col-lg"] {
   padding-right: 16px;
   padding-left: 16px;
+  box-sizing: border-box;
 }
 
 .image-sprite {
@@ -40,7 +89,6 @@
 .icons-image__account {
   width: 40px;
   height: 40px;
-
 }
 
 .google-play {
@@ -126,12 +174,13 @@
   width: 38%;
 }
 .place-block__input--place {
-  width: 160%;
+  width: 201%;
 }
 
 .date-block {
-  width: 21%;
+  width: 32%;
   display: flex;
+  justify-content: center;
 }
 
 .info-block {
@@ -140,8 +189,14 @@
 }
 
 .place-block__input--date {
-  max-width: 150px;
+  max-width: 110px;
   border: 3px solid #f5bd41;
+}
+
+.place-block__input-border{
+  border-right: none;
+  max-width: 110%;
+  border-radius: 8px 0 0 8px;
 }
 
 .place-block__input--date-between{
@@ -155,7 +210,7 @@
   border:3px solid #ffffff;
 }
 
-.place-block__input--info2{
+.place-block__input--info-mobile{
   display:none;
 }
 
@@ -221,6 +276,7 @@
   background-color: #10367c;
   color: #fff;
 }
+
 .main-row {
   display: flex;
   font-size: 20px;
@@ -270,31 +326,34 @@
   display: none;
 }
 
-.place-block__input--mobile-place{
+.place-block__input--destination-line{
   display: none;
 }
 
 .check-in{
-  max-width: 120px;
+  max-width: 42%;
 }
 
-.place-block__input--date2{
+.check-out{
+  max-width: 42%;
+}
+
+.check-in__info{
+  max-width: 35%;
+}
+
+.place-block__input--date-check-out{
   border-left: 0;
-  border-radius: 0;
+  border-radius: 0 8px 8px 0;
 }
 
 .place-block__input--date-between{
-  width: 15px;
+  max-width: 15px;
   margin-top: 143px;
   border: none;
   border-radius: 0;
   border-top: 3px solid #f5bd41;
   border-bottom: 3px solid #f5bd41;
-}
-
-.place-block__input--date2 {
-  max-width: 150px;
-  border: 3px solid #f5bd41;
 }
 
 .label-info{
@@ -447,7 +506,7 @@
 
   .main-title {
     margin-top: 40px;
-    font-size: 15px;
+    font-size: 30px;
   }
 
   .place-block__label {
@@ -459,7 +518,7 @@
     display: block;
   }
 
-  .place-block__input--info1{
+  .place-block__input--info-desktop{
     display:none;
   }
 
@@ -481,7 +540,7 @@
     box-sizing: border-box;
   }
 
-  .place-block__input--mobile-place{
+  .place-block__input--destination-line{
     display: block;
     width: 100%;
     height: 48px;
@@ -560,7 +619,7 @@
     border-radius: 0;
   }
 
-  .place-block__input--info2{
+  .place-block__input--info-mobile{
     display:flex;
     border: none;
   }

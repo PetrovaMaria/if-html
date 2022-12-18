@@ -11,8 +11,8 @@
   </head>
   <body>
     <div class="top-section">
-      <header>
-        <div class="container col-lg-12">
+      <header class="col-lg-12">
+        <div class="container">
           <div class="header-block">
             <svg
               class="left-element"
@@ -59,11 +59,11 @@
           </div>
         </div>
       </header>
-      <div>
-        <div class="container col-lg-12">
-          <div class="main-title">
-            <h1>Discover stays <br />to live, work or just relax</h1>
-          </div>
+      <div class="col-lg-12">
+        <div class="container">
+          <h1 class="main-title">
+            Discover stays <br />to live, work or just relax
+          </h1>
           <form class="destination">
             <div class="place-block col-sm-6">
               <label for="place" class="place-block__label">
@@ -76,9 +76,9 @@
                 class="place-block__input--place place-block__input"
               />
               <input
-                value="Your destination or hotel name"
+                placeholder="Your destination or hotel name"
                 type="text"
-                class="place-block__input--mobile-place place-block__input"
+                class="place-block__input--destination-line place-block__input"
               />
             </div>
             <div class="date-block col-sm-6">
@@ -88,26 +88,21 @@
                 </label>
                 <input
                   id="date-in"
-                  value="Tue 15 Sept"
+                  placeholder="Tue 15 Sept"
                   type="text"
-                  class="col-sm-3 place-block__input--date place-block__input"
+                  class="col-sm-3 place-block__input--date place-block__input place-block__input-border"
                 />
               </div>
-              <input
-                class="place-block__input--date-between place-block__input"
-                type="text"
-                value="—"
-                readonly
-              />
+              <span class="place-block__input--date-between place-block__input">—</span>
               <div class="col-sm-3 check-out">
                 <label for="date-out" class="place-block__label label-date">
                   Check-out
                 </label>
                 <input
                   id="date-out"
-                  value="Sat 19 Sept"
+                  placeholder="Sat 19 Sept"
                   type="text"
-                  class="col-sm-3 place-block__input--date place-block__input place-block__input--date2"
+                  class="col-sm-3 place-block__input--date place-block__input place-block__input--date-check-out"
                 />
               </div>
             </div>
@@ -120,13 +115,13 @@
                   <input
                     placeholder="2 Adult -"
                     type="text"
-                    class="col-sm-2 place-block__input--info1 place-block__input--info place-block__input"
+                    class="place-block__input--info-desktop place-block__input--info place-block__input"
                   />
                   <input
                     id="info-adult"
                     placeholder="2"
                     type="text"
-                    class="col-sm-2 place-block__input--info2 place-block__input--info place-block__input"
+                    class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
                   />
                 </div>
               </div>
@@ -141,13 +136,13 @@
                   <input
                     placeholder="0 Children -"
                     type="text"
-                    class="col-sm-2 place-block__input--info1 place-block__input--info place-block__input"
+                    class="place-block__input--info-desktop place-block__input--info place-block__input"
                   />
                   <input
                     id="info-children"
                     placeholder="0"
                     type="text"
-                    class="col-sm-2 place-block__input--info2 place-block__input--info place-block__input"
+                    class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
                   />
                 </div>
               </div>
@@ -157,21 +152,21 @@
                     Room
                   </label>
                   <input
-                    placeholder="1 Rooms -"
+                    placeholder="1 Rooms"
                     type="text"
-                    class="col-sm-2 place-block__input--info1 place-block__input--info place-block__input"
+                    class="place-block__input--info-desktop place-block__input--info place-block__input"
                   />
                   <input
                     id="info-room"
                     placeholder="1"
                     type="text"
-                    class="col-sm-2 place-block__input--info2 place-block__input--info place-block__input"
+                    class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
                   />
                 </div>
               </div>
             </div>
             <div class="button">
-              <button class="col-sm-6 place-block__search">Search</button>
+              <button class="place-block__search">Search</button>
             </div>
           </form>
           <div class="apps">
@@ -231,7 +226,7 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <footer class="col-lg-12 footer">
       <div class="container container__properties-footer">
         <svg
           viewBox="0 0 205 40"

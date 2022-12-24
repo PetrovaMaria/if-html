@@ -11,10 +11,14 @@
   </head>
   <body>
     <div class="top-section">
-      <header>
-        <div class="container col-lg-12">
+      <header class="col-lg-12">
+        <div class="container">
           <div class="header-block">
-            <svg class="left-element" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="left-element"
+              viewBox="0 0 205 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <use href="./images/sprite-svg.svg/#left" />
             </svg>
             <div class="right-element">
@@ -40,21 +44,28 @@
                 <svg
                   class="icons-image__account"
                   xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
                 >
                   <use href="./images/sprite-svg.svg/#account" />
+                </svg>
+                <svg
+                  class="icons-image__menu"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="./images/sprite-svg.svg/#menu" />
                 </svg>
               </div>
             </div>
           </div>
         </div>
       </header>
-      <div>
+      <div class="col-lg-12">
         <div class="container">
-          <div class="main-title">
-            <h1>Discover stays <br />to live, work or just relax</h1>
-          </div>
+          <h1 class="main-title">
+            Discover stays <br />to live, work or just relax
+          </h1>
           <form class="destination">
-            <div class="place-block">
+            <div class="place-block col-sm-6">
               <label for="place" class="place-block__label">
                 Your destination or hotel name
               </label>
@@ -64,28 +75,99 @@
                 type="text"
                 class="place-block__input--place place-block__input"
               />
-            </div>
-            <div class="date-block">
-              <label for="date" class="place-block__label label-date">
-                Check-in — Check-out
-              </label>
               <input
-                id="date"
-                placeholder="Tue 15 Sept — Sat 19 Sept"
+                placeholder="Your destination or hotel name"
                 type="text"
-                class="place-block__input--date place-block__input"
+                class="place-block__input--destination-line place-block__input"
               />
             </div>
-            <div class="info-block">
-              <label for="info" class="place-block__label label-info"> </label>
-              <input
-                id="info"
-                placeholder="2 Adults — 0 Children — 1 Room"
-                type="text"
-                class="place-block__input--info place-block__input"
-              />
+            <div class="date-block col-sm-6">
+              <div class="col-sm-3 check-in">
+                <label for="date-in" class="place-block__label label-date">
+                  Check-in
+                </label>
+                <input
+                  id="date-in"
+                  placeholder="Tue 15 Sept"
+                  type="text"
+                  class="col-sm-3 place-block__input--date place-block__input place-block__input-border"
+                />
+              </div>
+              <span class="place-block__input--date-between place-block__input">—</span>
+              <div class="col-sm-3 check-out">
+                <label for="date-out" class="place-block__label label-date">
+                  Check-out
+                </label>
+                <input
+                  id="date-out"
+                  placeholder="Sat 19 Sept"
+                  type="text"
+                  class="col-sm-3 place-block__input--date place-block__input place-block__input--date-check-out"
+                />
+              </div>
             </div>
-            <button class="place-block__search">Search</button>
+            <div class="info-block col-sm-6">
+              <div class="col-sm-2 check-in check-in__info">
+                <div class="indent">
+                  <label for="info-adult" class="place-block__label label-info">
+                    Adult
+                  </label>
+                  <input
+                    placeholder="2 Adult -"
+                    type="text"
+                    class="place-block__input--info-desktop place-block__input--info place-block__input"
+                  />
+                  <input
+                    id="info-adult"
+                    placeholder="2"
+                    type="text"
+                    class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-2 check-in check-in__info">
+                <div class="indent">
+                  <label
+                    for="info-children"
+                    class="place-block__label label-info"
+                  >
+                    Children
+                  </label>
+                  <input
+                    placeholder="0 Children -"
+                    type="text"
+                    class="place-block__input--info-desktop place-block__input--info place-block__input"
+                  />
+                  <input
+                    id="info-children"
+                    placeholder="0"
+                    type="text"
+                    class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-2 check-in check-in__info">
+                <div class="indent indent__room">
+                  <label for="info-room" class="place-block__label label-info">
+                    Room
+                  </label>
+                  <input
+                    placeholder="1 Rooms"
+                    type="text"
+                    class="place-block__input--info-desktop place-block__input--info place-block__input"
+                  />
+                  <input
+                    id="info-room"
+                    placeholder="1"
+                    type="text"
+                    class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="button">
+              <button class="place-block__search">Search</button>
+            </div>
           </form>
           <div class="apps">
             <svg xmlns="http://www.w3.org/2000/svg" class="google-play">
@@ -144,10 +226,10 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <footer class="col-lg-12 footer">
       <div class="container container__properties-footer">
         <svg
-                viewBox="0 0 205 40"
+          viewBox="0 0 205 40"
           class="left-element footer__logo"
           xmlns="http://www.w3.org/2000/svg"
         >

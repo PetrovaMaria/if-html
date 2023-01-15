@@ -418,8 +418,9 @@
 .img-guests{
   width: 296px;
   height: 296px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
+
 
 .block{
   width: 296px;
@@ -681,6 +682,7 @@
 .country-mark-reviews{
   display: flex;
 }
+
 
 @media (max-width: 768px) {
   .col-sm-1 {
@@ -1110,7 +1112,6 @@
 
   .guests-reviews{
     background-color: #EAF0F9;
-  ;
   }
 
   .second__guest-reviews-block, .third__guest-reviews-block{

@@ -25,13 +25,8 @@
               <div
                 class="right-element__icons right-element__icons--header-text"
               >
-                <div>
-                  <a href="#" class="right-element__text-line">Stays</a>
-                  <hr
-                    class="right-element__line right-element__line--underline"
-                  />
-                </div>
-                <p>Attractions</p>
+                <a href="#" class="right-element__text-line">Stays</a>
+                <a href="#" class="right-element__text-line">Attractions</a>
               </div>
               <div class="icons-image">
                 <svg
@@ -66,11 +61,11 @@
           </h1>
           <form class="destination">
             <div class="place-block col-sm-6">
-              <label for="place" class="place-block__label">
+              <label for="places" class="place-block__label">
                 Your destination or hotel name
               </label>
               <input
-                id="place"
+                id="places"
                 placeholder="New York"
                 type="text"
                 class="place-block__input--place place-block__input"
@@ -83,23 +78,25 @@
             </div>
             <div class="date-block col-sm-6">
               <div class="col-sm-3 check-in">
-                <label for="date-in" class="place-block__label label-date">
+                <label for="date--in" class="place-block__label label-date">
                   Check-in
                 </label>
                 <input
-                  id="date-in"
+                  id="date--in"
                   placeholder="Tue 15 Sept"
                   type="text"
                   class="col-sm-3 place-block__input--date place-block__input place-block__input-border"
                 />
               </div>
-              <span class="place-block__input--date-between place-block__input">—</span>
+              <span class="place-block__input--date-between place-block__input"
+                >—</span
+              >
               <div class="col-sm-3 check-out">
-                <label for="date-out" class="place-block__label label-date">
+                <label for="date--out" class="place-block__label label-date">
                   Check-out
                 </label>
                 <input
-                  id="date-out"
+                  id="date--out"
                   placeholder="Sat 19 Sept"
                   type="text"
                   class="col-sm-3 place-block__input--date place-block__input place-block__input--date-check-out"
@@ -109,7 +106,7 @@
             <div class="info-block col-sm-6">
               <div class="col-sm-2 check-in check-in__info">
                 <div class="indent">
-                  <label for="info-adult" class="place-block__label label-info">
+                  <label for="info--adult" class="place-block__label label-info">
                     Adult
                   </label>
                   <input
@@ -118,7 +115,7 @@
                     class="place-block__input--info-desktop place-block__input--info place-block__input"
                   />
                   <input
-                    id="info-adult"
+                    id="info--adult"
                     placeholder="2"
                     type="text"
                     class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
@@ -128,7 +125,7 @@
               <div class="col-sm-2 check-in check-in__info">
                 <div class="indent">
                   <label
-                    for="info-children"
+                    for="info--children"
                     class="place-block__label label-info"
                   >
                     Children
@@ -139,7 +136,7 @@
                     class="place-block__input--info-desktop place-block__input--info place-block__input"
                   />
                   <input
-                    id="info-children"
+                    id="info--children"
                     placeholder="0"
                     type="text"
                     class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
@@ -148,7 +145,7 @@
               </div>
               <div class="col-sm-2 check-in check-in__info">
                 <div class="indent indent__room">
-                  <label for="info-room" class="place-block__label label-info">
+                  <label for="info--room" class="place-block__label label-info">
                     Room
                   </label>
                   <input
@@ -157,7 +154,7 @@
                     class="place-block__input--info-desktop place-block__input--info place-block__input"
                   />
                   <input
-                    id="info-room"
+                    id="info--room"
                     placeholder="1"
                     type="text"
                     class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
@@ -180,9 +177,8 @@
         </div>
       </div>
     </div>
-    <div class="container container__properties">
-      <h2 class="title">What do we offer</h2>
-      <hr class="container__line container__line--offer-line" />
+    <div class="container">
+      <h2 class="title title__line">What do we offer</h2>
       <div class="main-block">
         <div class="main-block__row col-lg-3 col-sm-6">
           <svg
@@ -226,6 +222,42 @@
         </div>
       </div>
     </div>
+    <section class="homes-guests">
+      <div class="container">
+        <h2 class="title">Homes guests loves</h2>
+        <div class="blocks">
+          <div class="col-lg-3 block">
+            <img class="img-guests" src="./images/cafe.svg" alt="restaurant" />
+            <h3 class="hotel-title">Hotel Leopold</h3>
+            <p class="text-hotel">Saint Petersburg, Russia</p>
+          </div>
+          <div class="col-lg-3 col-sm-3 block">
+            <img
+              class="img-guests"
+              src="./images/swimming-pool.svg"
+              alt="swimming-pool"
+            />
+            <h3 class="hotel-title">Apartment Sunshine</h3>
+            <p class="text-hotel">Santa Cruz de Tenerife, Spain</p>
+            <div class="circle-mobile"></div>
+            <div class="arrow-right-mobile"></div>
+          </div>
+          <div class="col-lg-3 col-sm-3 block">
+            <img class="img-guests" src="./images/houses.svg" alt="houses" />
+            <h3 class="hotel-title">Villa Kunerad</h3>
+            <p class="text-hotel">Vysokie Tatry, Slowakia</p>
+          </div>
+          <div class="col-lg-3 col-sm-3 block last-block">
+            <img class="img-guests" src="./images/room.svg" alt="room" />
+            <h3 class="hotel-title">Hostel Friendship</h3>
+            <p class="text-hotel">Berlin, Germany</p>
+            <div class="circle">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="col-lg-12 footer">
       <div class="container container__properties-footer">
         <svg

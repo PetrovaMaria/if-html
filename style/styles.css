@@ -412,8 +412,7 @@
 }
 
 .img-guests{
-  width: 296px;
-  height: 296px;
+  width: 100%;
   padding-bottom: 24px;
 }
 
@@ -456,13 +455,11 @@
 }
 
 .arrow-right {
-  position: absolute;
-  z-index: 2;
-  width: 10px;
-  top: 155px;
-  height: 10px;
-  right: 16px;
+  margin-top: 12px;
+  margin-left: 12px;
   border: 2px solid #000;
+  width: 10px;
+  height: 10px;
   border-left: 0;
   border-top: 0;
   transform: rotate(315deg);
@@ -704,7 +701,8 @@
   }
 
   .container {
-    padding-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 40px;
   }
 
   .main-block {
@@ -718,11 +716,6 @@
   .title {
     margin-bottom: 32px;
     font-size: 28px;
-  }
-
-  .container__properties {
-    padding-top: 24px;
-    padding-bottom: 40px;
   }
 
   .container__line {
@@ -1005,8 +998,7 @@
   }
 
   .img-guests{
-    width: 156px;
-    height: 155px;
+    width: 100%;
     padding-bottom: 8px;
   }
 

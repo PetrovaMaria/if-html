@@ -556,4 +556,330 @@
       </div>
     </footer>
   </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="lesson 3" />
+    <meta name="keywords" content="meta, list, form, image, input, tables" />
+    <meta name="author" content="Masha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="stylesheet" href="style/styles.css" />
+  </head>
+  <body>
+    <div class="top-section">
+      <header class="col-lg-12">
+        <div class="container">
+          <div class="header-block">
+            <svg
+              class="left-element"
+              viewBox="0 0 205 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="./images/sprite-svg.svg/#left" />
+            </svg>
+            <div class="right-element">
+              <div
+                class="right-element__icons right-element__icons--header-text"
+              >
+                <a href="#" class="right-element__text-line">Stays</a>
+                <a href="#" class="right-element__text-line">Attractions</a>
+              </div>
+              <div class="icons-image">
+                <svg
+                  class="icons-image__night"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 30 30"
+                >
+                  <use href="./images/sprite-svg.svg/#night" />
+                </svg>
+                <svg
+                  class="icons-image__account"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                >
+                  <use href="./images/sprite-svg.svg/#account" />
+                </svg>
+                <svg
+                  class="icons-image__menu"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="./images/sprite-svg.svg/#menu" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="col-lg-12">
+        <div class="container">
+          <h1 class="main-title">
+            Discover stays <br />to live, work or just relax
+          </h1>
+          <form class="destination">
+            <div class="place-block col-sm-6">
+              <label for="places" class="place-block__label">
+                Your destination or hotel name
+              </label>
+              <input
+                id="places"
+                placeholder="New York"
+                type="text"
+                class="place-block__input--place place-block__input"
+              />
+              <input
+                placeholder="Your destination or hotel name"
+                type="text"
+                class="place-block__input--destination-line place-block__input"
+              />
+            </div>
+            <div class="date-block col-sm-6">
+              <div class="col-sm-3 check-in">
+                <label for="date--in" class="place-block__label label-date">
+                  Check-in
+                </label>
+                <input
+                  id="date--in"
+                  placeholder="Tue 15 Sept"
+                  type="text"
+                  class="col-sm-3 place-block__input--date place-block__input place-block__input-border"
+                />
+              </div>
+              <span class="place-block__input--date-between place-block__input"
+                >—</span
+              >
+              <div class="col-sm-3 check-out">
+                <label for="date--out" class="place-block__label label-date">
+                  Check-out
+                </label>
+                <input
+                  id="date--out"
+                  placeholder="Sat 19 Sept"
+                  type="text"
+                  class="col-sm-3 place-block__input--date place-block__input place-block__input--date-check-out"
+                />
+              </div>
+            </div>
+            <div class="info-block col-sm-6">
+              <div class="col-sm-2 check-in check-in__info">
+                <div class="indent">
+                  <label for="info--adult" class="place-block__label label-info">
+                    Adult
+                  </label>
+                  <input
+                    placeholder="2 Adult -"
+                    type="text"
+                    class="place-block__input--info-desktop place-block__input--info place-block__input"
+                  />
+                  <input
+                    id="info--adult"
+                    placeholder="2"
+                    type="text"
+                    class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-2 check-in check-in__info">
+                <div class="indent">
+                  <label
+                    for="info--children"
+                    class="place-block__label label-info"
+                  >
+                    Children
+                  </label>
+                  <input
+                    placeholder="0 Children -"
+                    type="text"
+                    class="place-block__input--info-desktop place-block__input--info place-block__input"
+                  />
+                  <input
+                    id="info--children"
+                    placeholder="0"
+                    type="text"
+                    class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-2 check-in check-in__info">
+                <div class="indent indent__room">
+                  <label for="info--room" class="place-block__label label-info">
+                    Room
+                  </label>
+                  <input
+                    placeholder="1 Rooms"
+                    type="text"
+                    class="place-block__input--info-desktop place-block__input--info place-block__input"
+                  />
+                  <input
+                    id="info--room"
+                    placeholder="1"
+                    type="text"
+                    class="col-sm-2 place-block__input--info-mobile place-block__input--info place-block__input"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="button">
+              <button class="place-block__search">Search</button>
+            </div>
+          </form>
+          <div class="apps">
+            <svg xmlns="http://www.w3.org/2000/svg" class="google-play">
+              <use href="./images/sprite-svg.svg/#google-play" />
+            </svg>
+            <svg class="App_Store" xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/sprite-svg.svg/#app-store" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="title title__line">What do we offer</h2>
+      <div class="main-block">
+        <div class="main-block__row col-lg-3 col-sm-6">
+          <svg
+            class="row-image"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="./images/sprite-svg.svg/#headset" />
+          </svg>
+          <p class="main-block__text">Support 24/7</p>
+        </div>
+        <div class="main-block__row col-lg-3 col-sm-6">
+          <svg
+            class="row-image"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="./images/sprite-svg.svg/#forum" />
+          </svg>
+          <p class="main-block__text">Communicate directly</p>
+        </div>
+        <div class="main-block__row col-lg-3 col-sm-6">
+          <svg
+            class="row-image"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="./images/sprite-svg.svg/#devices" />
+          </svg>
+          <p class="main-block__text">Book online</p>
+        </div>
+        <div class="main-block__row col-lg-3 col-sm-6">
+          <svg
+            class="row-image"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="./images/sprite-svg.svg/#outlined" />
+          </svg>
+          <p class="main-block__text">Real guest reviews</p>
+        </div>
+      </div>
+    </div>
+    <section class="homes-guests">
+      <div class="container">
+        <h2 class="title">Homes guests loves</h2>
+        <div class="blocks">
+          <div class="col-lg-3 block">
+            <img class="img-guests" src="./images/cafe.svg" alt="restaurant" />
+            <h3 class="hotel-title">Hotel Leopold</h3>
+            <p class="text-hotel">Saint Petersburg, Russia</p>
+          </div>
+          <div class="col-lg-3 col-sm-3 block">
+            <img
+              class="img-guests"
+              src="./images/swimming-pool.svg"
+              alt="swimming-pool"
+            />
+            <h3 class="hotel-title">Apartment Sunshine</h3>
+            <p class="text-hotel">Santa Cruz de Tenerife, Spain</p>
+            <div class="circle-mobile"></div>
+            <div class="arrow-right-mobile"></div>
+          </div>
+          <div class="col-lg-3 col-sm-3 block">
+            <img class="img-guests" src="./images/houses.svg" alt="houses" />
+            <h3 class="hotel-title">Villa Kunerad</h3>
+            <p class="text-hotel">Vysokie Tatry, Slowakia</p>
+          </div>
+          <div class="col-lg-3 col-sm-3 block last-block">
+            <img class="img-guests" src="./images/room.svg" alt="room" />
+            <h3 class="hotel-title">Hostel Friendship</h3>
+            <p class="text-hotel">Berlin, Germany</p>
+            <div class="circle">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="col-lg-12 footer">
+      <div class="container container__properties-footer">
+        <svg
+          viewBox="0 0 205 40"
+          class="left-element footer__logo"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use href="./images/sprite-svg.svg/#left" />
+        </svg>
+        <div class="main-row">
+          <div class="columns">
+            <p class="columns__footer-title">About</p>
+            <ul class="links">
+              <li class="links__element">
+                <a class="links__element--link" href="#">How Triphouse works</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Careers</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Privacy</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Terms</a>
+              </li>
+            </ul>
+          </div>
+          <div class="columns">
+            <p class="columns__footer-title">Property types</p>
+            <ul class="links">
+              <li class="links__element">
+                <a class="links__element--link" href="#">Guest houses</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Hotels</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Apartments</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Villas</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Holiday homes</a>
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">Hostels</a>
+              </li>
+            </ul>
+          </div>
+          <div class="columns">
+            <p class="columns__footer-title">Support</p>
+            <ul class="links">
+              <li class="links__element">
+                <a class="links__element--link" href="#"
+                  >Contact Customer Service</a
+                >
+              </li>
+              <li class="links__element">
+                <a class="links__element--link" href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="small-text">&copy;2022Triphouse, Inc. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>

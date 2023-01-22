@@ -55,18 +55,16 @@
 .container {
   margin: 0 auto;
   max-width: 1264px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 [class*="col-lg"] {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding: 0 16px;
   box-sizing: border-box;
 }
 
-[class*="col-lg-3"] {
-  margin-right: 16px;
-  margin-left: 16px;
+[class*="col-lg-3"], [class*="col-lg-4"] {
+  margin: 0 16px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -107,9 +105,7 @@
   width: 120px;
   height: 47px;
 }
-.container__properties {
-  padding-top: 120px;
-}
+
 .right-element__text-line {
   padding-bottom: 3px;
   text-decoration: none;
@@ -509,7 +505,7 @@
 
 .circle-bottom {
   background: #F3F3F4;
-  left: -335px;
+  left: -115%;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -571,12 +567,12 @@
 
 .guest-reviews-blocks{
   display: flex;
-  flex-wrap: wrap;
 }
 
 .guest-reviews-block{
   position: relative;
   box-sizing: border-box;
+  background-color: #EAF0F9;
 }
 
 .house-image {
@@ -584,7 +580,7 @@
 }
 
 .black-block {
-  width: calc(100% - 32px);
+  width: 100% ;
   height: 48px;
   background-color: rgba(56, 56, 56, 0.7);
   position: absolute;

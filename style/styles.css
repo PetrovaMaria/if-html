@@ -247,10 +247,6 @@
   border-left: 3px solid #f5bd41;
 }
 
-.sign-up-mv {
-  display: none;
-}
-
 .sign-up {
   display: block;
 }
@@ -677,6 +673,19 @@
   display: flex;
 }
 
+.sign-up-guests-reviews{
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up__logo-mv{
+  display: none;
+}
+
+.install{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .col-sm-1 {
     width: 16.66%;
@@ -1053,15 +1062,22 @@
     margin: 0 auto;
   }
 
-  .close-mv {
+  .close {
     padding: 21px 16px 45px;
+    width: 16px;
+    height: 16px;
+    left: 0;
   }
 
-  .sign-up-block-mv {
-    display: flex;
+  .sign-up-account {
+    margin: 0 auto;
   }
 
-  .sign-up-title-block-mv {
+  .sign-up-block {
+    background-color: #fff;
+  }
+
+  .sign-up-title-block {
     width: 58px;
     height: 58px;
     background-color: #3077c6;
@@ -1071,33 +1087,44 @@
     justify-content: center;
   }
 
-  .sign-up-mv {
-    display: block;
-  }
-
   .sign-up {
-    display: none;
+    display: block;
+    order: 1;
   }
 
-  .sign-up-mv__logo {
+  .sign-up__logo-mv {
+    display: inline-block;
+    margin-top: 24px;
+    margin-left: 49px;
+    background-color: #3077C6;
     fill: #ffffff;
-    width: 54px;
-    height: 11px;
+    width: 58px;
+    height: 58px;
+  }
+
+  .text-sign-up{
+    padding: 0;
+    width: 50%;
   }
 
   .container__properties {
     padding-bottom: 0;
   }
 
-  .title-sign-up-mv {
+  .title-sign-up {
     font-size: 12px;
-    padding: 15px 16px 0;
+    padding: 39px 16px;
+  }
+
+  .user-logo {
+    display: none;
   }
 
   .install {
+    display: inline;
     font-size: 14px;
     color: #3077c6;
-    padding: 21px 16px 45px;
+    padding: 45px 16px 45px 0;
   }
 
   .guests-reviews {
@@ -1108,4 +1135,9 @@
   .third__guest-reviews-block {
     display: none;
   }
+
+  .sign-up-button {
+    display: none;
+  }
+
 }
